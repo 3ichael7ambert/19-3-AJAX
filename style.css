@@ -1,0 +1,54 @@
+/* position the navigation div at the top and make it fixed */
+#navigate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  input {
+    padding:5px;
+  }
+  form {
+    display: inline;
+    margin-left: 20px;
+    margin-top:20px;
+    padding: 10px;
+  }
+  /* float the clear button to the right and add some padding */
+  #clear-button {
+    float: right;
+    margin-right: 20px;
+    padding: 5px;
+  }
+  
+  /* add a slight drop shadow to the search input */
+  #search-input {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* center the gif inside the results container */
+  #results-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* add a border, margin, padding and a drop shadow to the results container */
+  #results-container {
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* adjust the width of the gif so it fits nicely inside the container */
+  #results-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+  
