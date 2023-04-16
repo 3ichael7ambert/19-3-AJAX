@@ -48,8 +48,10 @@ form.addEventListener('submit', async (e) => {
   const searchTerm = document.querySelector('#search-input').value;
   const apiKey = 'MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym';
   const url = `http://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=${apiKey}`;
-  const response = await axios.get(url);
-  const gifUrl = response.data.data[0].images.downsized.url;
+  //curl "http://api.giphy.com/v1/gifs/search?q=banana&api_key=MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym"
+  const response = await axios.get(url); //response obj
+  const gifUrl = response.data.data[0].images.downsized.url;//{response} {data {images {downsized {url}}}}
+
   const img = document.createElement('img');
   img.setAttribute('src', gifUrl);
   resultsContainer.appendChild(img);
